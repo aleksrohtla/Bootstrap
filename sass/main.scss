@@ -1,19 +1,20 @@
-// custom variable values
-$primary: rgb(212, 218, 42);
-$light: #c3beae;
+// Custom variable values
+$primary: #1d4ed8; 
+$secondary: #8c99bb;  
+$light: #ffffff;      
 
-// import the functions & variables
-@import "../node_modules/bootstrap/scss/_functions";
-@import "../node_modules/bootstrap/scss/_variables";
+// Import the functions & variables
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
 
-// custom theme colours
+// Custom theme colours
 $custom-theme-colors: (
-  "altlight": #f2ebfa,
-  "altdark": #34b7ba,
+  "altlight": #f1f5f9,
+  "altdark":  #f59e0b, 
 );
 
-// merge the maps to add new theme colors
-$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+// Merge the maps to add new theme colors
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
 
-// import bootstrap
-@import "../workspaces/Bootstrap5/node_modules/bootstrap/scss";
+// Import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
